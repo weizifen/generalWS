@@ -1,0 +1,29 @@
+[db]
+    [db.mysql]
+    host="127.0.0.1"
+    port=3306
+    username="root"
+    password="123456"
+    db="farm"
+    [db.redis]
+    host="127.0.0.1"
+    port=6379
+    password=""
+    db=0
+    poolsize=30
+    minidleconns=30
+[server]
+host="127.0.0.1"
+port=7500
+wxloginurl="https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code"
+appid=""
+secret=""
+groupcodesecret=""
+secretkey="game"
+showsql=true
+
+websocketport="8089"
+rpcport="9001"
+
+
+runmode="debug"
